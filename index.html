@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculate Monthly Mortgage Payment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <header>
+      <h1>Mortgage Rate Calculator</h1>
+      <center><p1>This is a simple app used to calculate the monthly mortgage payment for a fixed-rate mortgage</p1></center>
+      <center><img src="HouseImage.jpg" alt="House Picture"
+          width="300"
+          height="200"></center>
+      </header>
+      <center><p2>The mortgage payment is found using the following formula:</p2>
+      <center><img src = "Mortgage.jpg" alt="Mortgage Formula"
+          width="400"
+          height="100"></center>
+      <p3>where P is the principal, r is the monthly rate as a decimal (yearly rate as a percent divided by 1200), and n is the length of the mortgage in months (years multiplied by 12).</p3>
+      <div class="content">
+            <h2>Enter Mortgage details Below</h2>
+            <label for="principal">Principal Mortgage Rate ($):</label>
+            <input type="number" id="principal" required>
+            <label for="rate">Yearly Interest Rate (%):</label>
+            <input type="number" id="rate" required>
+            <label for="years">Mortgage Term (Years):</label>
+            <select id="years">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+            </select>
+            <button onclick="calcPayment()">Calculate Mortgage Payment!</button>
+    <p4 id="result"></p4>
+  </body>
+</html>
